@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Form</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Reservation Form</h1>
+        <form>
+            <fieldset id="general-information">
+                <legend>General information</legend>
+
+                <label for="arrival-date">Arrival Date:</label>
+                <input type="date" id="arrival-date"><br><br>
+
+                <label for="nights">Number of Nights:</label>
+                <input type="number" id="nights"><br><br>
+
+                <label for="adults">Adults:</label>
+                <input type="number" id="noOfAdults"><br><br>
+
+                <label for="children">Children:</label>
+                <input type="number" id="noOfChildren"><br><br>
+            </fieldset>
+
+            <br>
+
+            <fieldset id="preference">
+                <legend>Preference</legend>
+
+                <label for="room-type">Room Type:</label>
+                <input type="radio" id="standard" name="room-type" value="standard">
+                <label for="standard">Standard</label>
+
+                <input type="radio" id="business" name="room-type" value="business">
+                <label for="business">Business</label>
+
+                <input type="radio" id="suite" name="room-type" value="Suite">
+                <label for="Suite">Suite</label>
+
+                <br><br>
+
+                <label for="bed-type">Bed Type:</label>
+                <input type="radio" id="king" name="bed-type" value="king">
+                <label for="king">King</label>
+
+                <input type="radio" id="double" name="bed-type" value="double">
+                <label for="double">Double-Double</label>
+
+                <br><br>
+
+                <input type="checkbox" id="smoke" name="smoke" value="smoke">
+                <label for="smoking">Smoking</label>
+            </fieldset>
+
+            <br>
+
+            <fieldset id="contect-information">
+                <legend>Contect information</legend>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email"
+                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+
+                <br><br>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="999-999-9999" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    required>
+            </fieldset>
+
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+
+        <br>
+        <footer>By: Marmik N Patel | Student Number: N01649273</footer>
+        <br>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

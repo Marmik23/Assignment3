@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales Tax Calculator</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div id="container">
+    <h1>Sales Tax Calculator</h1>
+    <div id="form">
+      <label for="subtotal">Subtotal:</label>
+      <input type="text" id="subtotal"><br>
+      <label for="taxrate">Tax Rate (%):</label>
+      <input type="text" id="taxrate"><br>
+      <label for="salestax">Sales Tax:</label>
+      <input type="text" id="salestax" disabled><br>
+      <label for="total">Total:</label>
+      <input type="text" id="total" disabled><br>
+      <button id="calculate">Calculate</button>
+      <button id="clear">Clear</button>
+    </div>
+    <p id="error" class="error"></p>
+    <footer>By: Marmik N Patel | Student Number: N01649273</footer>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+</html>

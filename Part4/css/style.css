@@ -1,0 +1,12 @@
+#container {
+    width: 600px;
+    margin: 0 auto;
+    border: 2px solid purple;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.error {
+    color: red;
+}
